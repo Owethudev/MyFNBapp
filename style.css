@@ -73,3 +73,12 @@ a:hover{
 #fighternames:hover{
     color: red;
 }
+
+#fightingstyles img{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+}
+#fightingstyles img:hover{
+    background-color: grey;
+}
