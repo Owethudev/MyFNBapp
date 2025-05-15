@@ -82,3 +82,13 @@ a:hover{
 #fightingstyles img:hover{
     background-color: grey;
 }
+ /*loginform styling here*/
+#loginform label{
+    font-family: fantasy ;
+}
+#loginform input:hover{
+    background-color: grey;
+}
+#loginform input{
+    font-family: fantasy;
+}
