@@ -28,10 +28,9 @@
      text-decoration: none;
 }
 
-#menu-bar a:hover{
-    color: red;
-    background-color: whitesmoke; 
-
+#menu-bar img{
+    width: 30px;
+    padding: 30px;
 }
 
 p{ 
@@ -50,17 +49,18 @@ a:hover{
     color: red;
 }
 
-/*this is for every link in the menu that's at the top of the page*/
+/*this is for the menu that's at the top of the page*/
 .mainmenu a{
     text-decoration: none;
     color: black;
     font-family: fantasy;
 }
-.mainmenu a:hover{
-    color: red;
-    padding: right 100px;
+.mainmenu img{
+    width: 30px;
+    padding: 30px;
 }
 
+/*this is for all headings in pages*/
 #heading h1{
     font-family: fantasy;
     text-align: center;
@@ -70,6 +70,7 @@ a:hover{
     color: grey;
 }
 
+/*about page with all the differnt types of fighting styles*/
 #fighternames:hover{
     color: red;
 }
@@ -82,7 +83,7 @@ a:hover{
 #fightingstyles img:hover{
     background-color: grey;
 }
- /*loginform styling here*/
+ /*loginform styling here
 #loginform label{
     font-family: fantasy ;
 }
@@ -92,3 +93,79 @@ a:hover{
 #loginform input{
     font-family: fantasy;
 }
+
+*/
+/*this is all the store css*/
+.storeimg img{
+    width: 200px;
+}
+.storeimg button{
+    border-radius: 13px;
+    font-family: fantasy;
+    padding: 10px;
+    background-color: white;
+}
+
+.storeimg button:hover{
+    background-color: grey;
+}
+
+
+.gloves {
+    display: flex;
+    align-items: center;
+}
+.gloves p{
+    padding: 40px;
+}
+
+
+
+.jacket {
+    display: flex;
+    align-items: center;
+}
+.jacket p{
+    padding: 40px;
+}
+
+
+
+.shirt {
+    display: flex;
+    align-items: center;
+}
+.shirt p{
+    padding: 40px;
+}
+
+
+
+.short {
+    display: flex;
+    align-items: center;
+}
+.short p{
+    padding: 40px;
+}
+
+
+
+.sportbag {
+    display: flex;
+    align-items: center;
+}
+.sportbag p{
+    padding: 40px;
+}
+
+
+
+.hoodie {
+    display: flex;
+    align-items: center;
+}
+.hoodie p{
+    padding: 40px;
+}
+
