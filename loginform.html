@@ -7,28 +7,48 @@
     <title>loginform</title>
 </head>
 <body>
-    <center>
-    <form>
-        <div id="loginform">
-            <p>Cage Rush login</p>
-            <hr><br>
-            
-            <label> Username:</label><input type="text" required>
-            <br><br>
-            <label>Password:</label><input type="password" required>
-            <br><br>
-            <input type="checkbox">
-            <label>Remember me</label>
-            <br><br>
-            <input type="submit">
-            <br><br>
-        </div>
-    </form>
-    </center>
-    <hr><br>
-    <center>
-    <div id="menu-bar">
-        <a href="home.html">Home</a> <a href="about.html">About</a> <a href="loginform.html">Store</a>
-    </center>
+    <div id="heading">
+        <a href="home.html"><h1>Cage Rush</h1></a> 
+     </div>
+     <hr>
+     <div class="mainmenu">
+         <a href="home.html"><img src="images/icons/home.png"></a> <a href="about.html"><img src="images/icons/about.png"></a> <a href="store.html"><img src="images/icons/shop.png" alt=""></a> <a href="https://www.ufc.com/events#events-list-upcoming"><img src="images/icons/events.png" alt=""></a>
+     </div>
+     <hr>
+
+     <div class="container">
+        <form id="form">
+            <div class="title">Get started</div>
+            <br>
+            <!--username input here-->
+            <div>
+                <label for="username">username</label>
+                <input type="text" name="username" id="username" placeholder="eg. mmajack12">
+                <div class="error">username cannot be blank</div>
+            </div>
+
+            <!--email input here-->
+<div>
+    <label for="email">email</label>
+    <input type="text" name="email" id="email" placeholder="eg. hello@gmail.com">
+    <div class="error">email cannot be blank</div>
+</div>
+
+
+<!--password input here-->
+<div>
+    <label for="password">password</label>
+    <input type="text" name="password" id="password" placeholder="***********">
+    <div class="error">email cannot be blank</div>
+</div>
+              <br>
+            <button type="submit" id="myBtn">Submit</button>
+        </form>
+     </div>
+     <script src="main.js"></script>
 </body>
 </html>
+
+<!-- this is for later on use when we start having a functioning backend-->
+
+
