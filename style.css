@@ -50,6 +50,10 @@ a:hover{
 }
 
 /*this is for the menu that's at the top of the page*/
+.mainmenu{
+    display: flex;
+    align-items: center;
+}
 .mainmenu a{
     text-decoration: none;
     color: black;
@@ -59,6 +63,26 @@ a:hover{
     width: 30px;
     padding: 30px;
 }
+.menuBtns{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+ /*this is for the dropdownmenu in the menu tab at the top of the page*/
+.menuoptions a{
+    display: block;
+    padding: 20px;
+}
+
+.menuoptions {
+    background-color: gray;
+    position: absolute;
+    display: none;
+}
+.dropdown:hover .menuoptions{
+    display: block;
+}
+
 
 /*this is for all headings in pages*/
 #heading h1{
@@ -160,7 +184,6 @@ a:hover{
 }
 
 
-
 .hoodie {
     display: flex;
     align-items: center;
@@ -171,12 +194,7 @@ a:hover{
 
 /*loginform styling*/
 
-.error{
-    opacity: 0;
-    color: red;
-    padding: 5px;
-    font-size: 14px;
-}
+
 .container{
     font-family: fantasy;
 }
@@ -210,4 +228,96 @@ a:hover{
 
 #form button:hover{
     color: grey;
+}
+
+/*this is for the store and shsowing the different item sizes*/
+.gloves .ufcglovesizes a{
+    display: block;   
+}
+.gloves .ufcglovesizes{
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 335px;
+    margin-top: 160px;
+    display:none; 
+}
+
+.gloves:hover .ufcglovesizes{
+    display: block;
+}
+
+.jacket .ufcjacketsizes a{
+display: block;
+}
+.jacket .ufcjacketsizes{
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 335px;
+    margin-top: 158px; 
+    display: none; 
+}
+.jacket:hover .ufcjacketsizes{
+    display: block;
+}
+
+.shirt .ufcshirtsizes a{
+    display: block;
+}
+.shirt .ufcshirtsizes{
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 335px;
+    margin-top: 158px; 
+    display:none ; 
+}
+.shirt:hover .ufcshirtsizes{
+    display: block;
+}
+
+.short .ufcshortsizes a{
+    display: block;
+}
+.short .ufcshortsizes{ 
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 335px;
+    margin-top: 160px; 
+    display:none ; 
+}
+.short:hover .ufcshortsizes{
+    display: block;
+}
+
+.sportbag .ufcsportbagsizes a{
+    display: block;
+}
+.sportbag .ufcsportbagsizes{
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 335px;
+    margin-top: 160px; 
+    display:none ; 
+}
+.sportbag:hover .ufcsportbagsizes{
+    display: block;
+}
+
+.hoodie .ufchoodiesizes a{
+    display: block;
+}
+.hoodie .ufchoodiesizes{
+    position: absolute;
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-left: 335px;
+    margin-top: 160px; 
+    display:none ; 
+}
+.hoodie:hover .ufchoodiesizes{
+    display: block;
 }

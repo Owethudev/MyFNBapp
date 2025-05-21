@@ -12,8 +12,13 @@
      </div>
      <hr>
      <div class="mainmenu">
-         <a href="home.html"><img src="images/icons/home.png"></a> <a href="about.html"><img src="images/icons/about.png"></a> <a href="store.html"><img src="images/icons/shop.png" alt=""></a> <a href="https://www.ufc.com/events#events-list-upcoming"><img src="images/icons/events.png" alt=""></a>
-     </div>
+        <a href="home.html"><img src="images/icons/home.png"></a> <a href="about.html"><img src="images/icons/about.png"></a> <a href="store.html"><img src="images/icons/shop.png" alt=""></a> <a href="https://www.ufc.com/events#events-list-upcoming"><img src="images/icons/events.png" alt=""></a>  <div class="dropdown"><button class="menuBtns"><img src="images/icons/menu.png" ></button>
+       <div class="menuoptions">
+           <a href="home.html">home</a>
+           <a href="about.html">about</a>
+           <a href="store.html">store</a>
+       </div></div>
+    </div>
      <hr>
 
      <div class="container">
@@ -24,14 +29,14 @@
             <div>
                 <label for="username">username</label>
                 <input type="text" name="username" id="username" placeholder="eg. mmajack12">
-                <div class="error">username cannot be blank</div>
+                
             </div>
 
             <!--email input here-->
 <div>
     <label for="email">email</label>
     <input type="text" name="email" id="email" placeholder="eg. hello@gmail.com">
-    <div class="error">email cannot be blank</div>
+    
 </div>
 
 
@@ -39,12 +44,14 @@
 <div>
     <label for="password">password</label>
     <input type="text" name="password" id="password" placeholder="***********">
-    <div class="error">email cannot be blank</div>
+    
 </div>
               <br>
             <button type="submit" id="myBtn">Submit</button>
         </form>
      </div>
+     <hr>
+     
      <script src="main.js"></script>
 </body>
 </html>
