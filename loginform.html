@@ -23,7 +23,7 @@
 
      <div class="container">
         <form id="form">
-            <div class="title">Get started</div>
+            <div class="title"><p id="getstarted">Get started</p></div>
             <br>
             <!--username input here-->
             <div>
@@ -32,27 +32,19 @@
                 
             </div>
 
-            <!--email input here-->
-<div>
-    <label for="email">email</label>
-    <input type="text" name="email" id="email" placeholder="eg. hello@gmail.com">
-    
-</div>
-
-
 <!--password input here-->
 <div>
-    <label for="password">password</label>
-    <input type="text" name="password" id="password" placeholder="***********">
+                <label for="password">password</label>
+                <input type="text" name="password" id="password" placeholder="***********">
     
 </div>
               <br>
-            <button type="submit" id="myBtn">Submit</button>
+            <button type="submit" id="myBtn" onclick="loginBtn()">Submit</button>
         </form>
      </div>
      <hr>
-     
-     <script src="main.js"></script>
+     <script src="myjs.js">    
+     </script>
 </body>
 </html>
 
