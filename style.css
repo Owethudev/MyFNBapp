@@ -142,6 +142,10 @@ a:hover{
 .gloves p{
     padding: 40px;
 }
+.gloves input {
+    width: 25px;
+    padding: 10px;
+}
 
 
 
@@ -152,7 +156,10 @@ a:hover{
 .jacket p{
     padding: 40px;
 }
-
+.jacket input {
+    width: 25px;
+    padding: 10px;
+}
 
 
 .shirt {
@@ -161,6 +168,10 @@ a:hover{
 }
 .shirt p{
     padding: 40px;
+}
+.shirt input {
+    width: 25px;
+    padding: 10px;
 }
 
 
@@ -172,7 +183,10 @@ a:hover{
 .short p{
     padding: 40px;
 }
-
+.short input {
+    width: 25px;
+    padding: 10px;
+}
 
 
 .sportbag {
@@ -182,6 +196,10 @@ a:hover{
 .sportbag p{
     padding: 40px;
 }
+.sportbag input {
+    width: 25px;
+    padding: 10px;
+}
 
 
 .hoodie {
@@ -190,6 +208,10 @@ a:hover{
 }
 .hoodie p{
     padding: 40px;
+}
+.hoodie input {
+    width: 25px;
+    padding: 10px;
 }
 
 /*loginform styling*/
@@ -230,7 +252,8 @@ a:hover{
     color: grey;
 }
 
-/*this is for the store and shsowing the different item sizes*/
+/*this is for the store and shsowing the different item sizes (disabling this feauture until further notice)*/
+/*
 .gloves .ufcglovesizes a{
     display: block;   
 }
@@ -321,3 +344,4 @@ display: block;
 .hoodie:hover .ufchoodiesizes{
     display: block;
 }
+

@@ -22,52 +22,49 @@
      <hr>
         <div class="storeimg">
             <div class="gloves">
-            <img src="images/store/gloves.avif"> <div class="ufcglove"><p>UFC gloves <br><br>R1200</p></div><div class="ufcglovesizes">
-                <a href="#">small</a><br>
-                <a href="#">medium</a><br>
-                <a href="#">large</a>
-            </div><a href="loginform.html"><button>buy</button></a>
-         </div>
+            <img src="images/store/gloves.avif"> <div class="ufcglove"><p>UFC gloves <br><br>R1200</p></div>
+            <a href="loginform.html"><button>buy</button></a>
+            <input type="text" id = "howManyItemsGloves" value = 0><button onclick="increaseGloves()">+</button><button onclick="decreaseGloves()">-</button>
+            </div>
+    
     
     <br><br><br>
            <div class="jacket">
-           <img src="images/store/hoodie.webp"> <div class="ufcjacket"><p>UFC jacket <br><br>R900</p></div><div class="ufcjacketsizes">
-                <a href="#">small</a><br>
-                <a href="#">medium</a><br>
-                <a href="#">large</a>
-           </div><a href="loginform.html"><button>buy</button></a>
-         </div>
+           <img src="images/store/hoodie.webp"> <div class="ufcjacket"><p>UFC jacket <br><br>R900</p></div>
+           <a href="loginform.html"><button>buy</button></a>
+           <input type="text" id = "howManyItemsJacket" value= 0><button onclick="increaseJacket()">+</button><button onclick="decreaseJacket()">-</button>
+           </div>
+         
+
     <br><br><br>
          <div class="shirt">
-         <img src="images/store/shirtgold.avif"> <div class="ufcshirt"><p>UFC shirt <br><br>R600</p></div><div class="ufcshirtsizes">
-                <a href="#">small</a><br>
-                <a href="#">medium</a><br>
-                <a href="#">large</a>
-         </div><a href="loginform.html"><button>buy</button></a>
+         <img src="images/store/shirtgold.avif"> <div class="ufcshirt"><p>UFC shirt <br><br>R600</p></div>
+         <a href="loginform.html"><button>buy</button></a>
+         <input type="text" id = "howManyItemsShirt" value= 0><button onclick="increaseShirt()">+</button><button onclick="decreaseShirt()">-</button>
          </div>
+
+        
     <br><br><br>
          <div class="short">
-         <img src="images/store/shorts.avif"> <div class="ufcshort"><p>UFC short <br><br>R500</p></div><div class="ufcshortsizes">
-                <a href="#">small</a><br>
-                <a href="#">medium</a><br>
-                <a href="#">large</a>
-         </div><a href="loginform.html"><button>buy</button></a>
-         </div>
+         <img src="images/store/shorts.avif"> <div class="ufcshort"><p>UFC short <br><br>R500</p></div>
+         <a href="loginform.html"><button>buy</button></a>
+         <input type="text" id = "howManyItemsShort" value= 0><button onclick="increaseShort()">+</button><button onclick="decreaseShort()">-</button>
+         </div> 
+
+
     <br><br><br>
          <div class="sportbag">
-         <img src="images/store/sportbag.avif"> <div class="ufcsportbag"><p>UFC sportbag <br><br>R1000</p></div><div class="ufcsportbagsizes">
-                <a href="#">small</a><br>
-                <a href="#">medium</a><br>
-                <a href="#">large</a>
-         </div><a href="loginform.html"><button>buy</button></a>
+         <img src="images/store/sportbag.avif"> <div class="ufcsportbag"><p>UFC sportbag <br><br>R1000</p></div>
+         <a href="loginform.html"><button>buy</button></a>
+         <input type="text" id = "howManyItemsSportBag" value= 0><button onclick="increaseSportBag()">+</button><button onclick="decreaseSportBag()">-</button>
          </div>
+
+
     <br><br><br>
          <div class="hoodie">
-         <img src="images/store/sweater.avif"> <div class="ufchoodie"><p>UFC hoodie <br><br>R980</p></div><div class="ufchoodiesizes">
-                <a href="#">small</a><br>
-                <a href="#">medium</a><br>
-                <a href="#">large</a>
-         </div><a href="loginform.html"><button>buy</button></a>
+         <img src="images/store/sweater.avif"> <div class="ufchoodie"><p>UFC hoodie <br><br>R980</p></div>
+         <a href="loginform.html" class="buyButton"><button>buy</button></a>
+         <input type="text" id = "howManyItemsHoodie" value= 0><button onclick="increaseHoodie()">+</button><button onclick="decreaseHoodie()">-</button>
          </div>
     </div>
     <hr>
@@ -80,6 +77,8 @@
        </div></div>
     </div>
 
+
+    <script src="myjs.js"></script>
 </body>
 </html>
 
