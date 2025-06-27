@@ -4,21 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>store</title>
 </head>
 <body>
-    <div id="heading">
-        <a href="home.html"><h1>Cage Rush</h1></a> 
-     </div>
-     <hr>
-     <div class="mainmenu">
-        <a href="home.html"><img src="images/icons/home.png"></a> <a href="about.html"><img src="images/icons/about.png"></a> <a href="store.html"><img src="images/icons/shop.png" alt=""></a> <a href="https://www.ufc.com/events#events-list-upcoming"><img src="images/icons/events.png" alt=""></a>  <div class="dropdown"><button class="menuBtns"><img src="images/icons/menu.png" ></button>
-       <div class="menuoptions">
-           <a href="home.html">home</a>
-           <a href="about.html">about</a>
-           <a href="store.html">store</a>
-       </div></div>
+   <!-- Sticky Navigation -->
+<header class="sticky-nav">
+  <div class="sticky-nav-container">
+    <div class="sticky-nav-logo">
+      <i class="fas fa-mountain"></i>
+      <span>Cage Rush</span>
     </div>
+    <nav class="sticky-nav-menu">
+      <ul>
+        <li><a href="home.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="store.html">Store</a></li>
+      </ul>
+    </nav>
+    <button class="sticky-nav-toggle">
+      <i class="fas fa-bars"></i>
+    </button>
+  </div>
+</header>
+<div class="content">
+  <!-- Your page content goes here -->
      <hr>
         <div class="storeimg">
             <div class="gloves">
@@ -68,16 +78,77 @@
          </div>
     </div>
     <hr>
-    <div class="mainmenu">
-        <a href="home.html"><img src="images/icons/home.png"></a> <a href="about.html"><img src="images/icons/about.png"></a> <a href="store.html"><img src="images/icons/shop.png" alt=""></a> <a href="https://www.ufc.com/events#events-list-upcoming"><img src="images/icons/events.png" alt=""></a>  <div class="dropdown"><button class="menuBtns"><img src="images/icons/menu.png" ></button>
-       <div class="menuoptions">
-           <a href="home.html">home</a>
-           <a href="about.html">about</a>
-           <a href="store.html">store</a>
-       </div></div>
-    </div>
+    
+</div>
+<script>
+    // Wait for DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the navigation element
+  const nav = document.querySelector('.sticky-nav');
+  const menuToggle = document.querySelector('.sticky-nav-toggle');
+  const menu = document.querySelector('.sticky-nav-menu');
+  
+  // Scroll event listener
+  window.addEventListener('scroll', function() {
+    // Add 'scrolled' class when page is scrolled
+    if (window.scrollY > 50) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+  
+  // Mobile menu toggle
+  if (menuToggle) {
+    menuToggle.addEventListener('click', function() {
+      menu.classList.toggle('mobile-active');
+      // Toggle icon between bars and times (X)
+      const icon = menuToggle.querySelector('i');
+      if (icon.classList.contains('fa-bars')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+    });
+  }
+  
+  // Handle clicks on menu links (for mobile)
+  const menuLinks = document.querySelectorAll('.sticky-nav-menu a');
+  menuLinks.forEach(link => {
+    link.addEventListener('click', function() {
+      // If current viewport is mobile size
+      if (window.innerWidth <= 768) {
+        menu.classList.remove('mobile-active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+      }
+      
+      // Remove active class from all links
+      menuLinks.forEach(item => item.classList.remove('active'));
+      // Add active class to clicked link
+      this.classList.add('active');
+    });
+  });
+});
 
-
+// Resize event handler to reset mobile menu
+window.addEventListener('resize', function() {
+  const menu = document.querySelector('.sticky-nav-menu');
+  const menuToggle = document.querySelector('.sticky-nav-toggle');
+  const icon = menuToggle?.querySelector('i');
+  
+  if (window.innerWidth > 768) {
+    menu?.classList.remove('mobile-active');
+    if (icon && icon.classList.contains('fa-times')) {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
+  }
+});
+</script>
     <script src="myjs.js"></script>
 </body>
 </html>
